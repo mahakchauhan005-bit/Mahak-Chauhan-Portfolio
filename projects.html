@@ -1,0 +1,980 @@
+<!-- =========================================
+     MAHAK CHAUHAN PORTFOLIO
+     PROJECTS PAGE
+========================================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Projects | Mahak Chauhan</title>
+
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- Devicon -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    >
+
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+</head>
+
+
+<body class="bg-[#05080B] text-white">
+
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <header
+        class="fixed top-0 left-0 w-full
+               px-[4%] md:px-[6%]
+               py-3
+               bg-[#05080b]/95
+               border-b border-white/5
+               z-[1000]"
+    >
+
+        <div class="w-full flex items-center justify-between">
+
+
+            <!-- LOGO -->
+
+            <a
+                href="index.html"
+                class="text-white
+                       no-underline
+                       text-[13px] sm:text-[15px]
+                       font-bold
+                       tracking-[2px] sm:tracking-[4px]
+                       whitespace-nowrap"
+            >
+                MAHAK CHAUHAN
+            </a>
+
+
+            <!-- DESKTOP NAVIGATION -->
+
+            <nav
+                class="hidden md:flex
+                       items-center
+                       gap-[22px] lg:gap-[30px]"
+            >
+
+                <a
+                    href="index.html"
+                    class="text-[#A7A7A7]
+                           no-underline
+                           text-[14px]
+                           hover:text-[#8B5CF6]
+                           transition"
+                >
+                    Home
+                </a>
+
+
+                <!-- ACTIVE PROJECTS -->
+
+                <a
+                    href="projects.html"
+                    class="relative
+                           text-[#8B5CF6]
+                           no-underline
+                           text-[14px]
+                           after:content-['']
+                           after:absolute
+                           after:left-0
+                           after:bottom-[-4px]
+                           after:w-full
+                           after:h-[1px]
+                           after:bg-[#8B5CF6]"
+                >
+                    Projects
+                </a>
+
+
+                <a
+                    href="about.html"
+                    class="text-[#A7A7A7]
+                           no-underline
+                           text-[14px]
+                           hover:text-[#8B5CF6]
+                           transition"
+                >
+                    About
+                </a>
+
+
+                <a
+                    href="skills.html"
+                    class="text-[#A7A7A7]
+                           no-underline
+                           text-[14px]
+                           hover:text-[#8B5CF6]
+                           transition"
+                >
+                    Skills
+                </a>
+
+
+                <a
+                    href="resume.html"
+                    class="text-[#A7A7A7]
+                           no-underline
+                           text-[14px]
+                           hover:text-[#8B5CF6]
+                           transition"
+                >
+                    Resume
+                </a>
+
+
+                <a
+                    href="contact.html"
+                    class="text-[#A7A7A7]
+                           no-underline
+                           text-[14px]
+                           hover:text-[#8B5CF6]
+                           transition"
+                >
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <!-- LET'S TALK -->
+
+            <a
+                href="contact.html"
+                class="text-[#8B5CF6]
+                       border border-[#8B5CF6]
+                       px-[14px]
+                       py-[5px]
+                       rounded-[20px]
+                       no-underline
+                       text-[10px] sm:text-[11px]
+                       hover:bg-[#8B5CF6]
+                       hover:text-white
+                       transition
+                       whitespace-nowrap"
+            >
+                Let's Talk
+            </a>
+
+        </div>
+
+
+        <!-- MOBILE NAVIGATION -->
+
+        <nav
+            class="md:hidden
+                   w-full
+                   flex
+                   items-center
+                   justify-center
+                   gap-[14px] sm:gap-[22px]
+                   overflow-x-auto
+                   py-2
+                   mt-1"
+        >
+
+            <a
+                href="index.html"
+                class="text-[#A7A7A7]
+                       no-underline
+                       text-[12px] sm:text-[13px]
+                       whitespace-nowrap
+                       hover:text-[#8B5CF6]
+                       transition"
+            >
+                Home
+            </a>
+
+
+            <!-- ACTIVE PROJECTS -->
+
+            <a
+                href="projects.html"
+                class="relative
+                       text-[#8B5CF6]
+                       no-underline
+                       text-[12px] sm:text-[13px]
+                       whitespace-nowrap
+                       after:content-['']
+                       after:absolute
+                       after:left-0
+                       after:bottom-[-4px]
+                       after:w-full
+                       after:h-[1px]
+                       after:bg-[#8B5CF6]"
+            >
+                Projects
+            </a>
+
+
+            <a
+                href="about.html"
+                class="text-[#A7A7A7]
+                       no-underline
+                       text-[12px] sm:text-[13px]
+                       whitespace-nowrap
+                       hover:text-[#8B5CF6]
+                       transition"
+            >
+                About
+            </a>
+
+
+            <a
+                href="skills.html"
+                class="text-[#A7A7A7]
+                       no-underline
+                       text-[12px] sm:text-[13px]
+                       whitespace-nowrap
+                       hover:text-[#8B5CF6]
+                       transition"
+            >
+                Skills
+            </a>
+
+
+            <a
+                href="resume.html"
+                class="text-[#A7A7A7]
+                       no-underline
+                       text-[12px] sm:text-[13px]
+                       whitespace-nowrap
+                       hover:text-[#8B5CF6]
+                       transition"
+            >
+                Resume
+            </a>
+
+
+            <a
+                href="contact.html"
+                class="text-[#A7A7A7]
+                       no-underline
+                       text-[12px] sm:text-[13px]
+                       whitespace-nowrap
+                       hover:text-[#8B5CF6]
+                       transition"
+            >
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================================
+         PROJECTS INTRO SECTION
+    ========================================== -->
+
+    <section
+        class="px-[6%] md:px-[8%]
+               pt-[130px]
+               pb-[45px]"
+    >
+
+        <div
+            class="flex
+                   flex-col
+                   lg:flex-row
+                   items-center
+                   justify-between
+                   gap-[35px]"
+        >
+
+
+            <!-- LEFT SIDE -->
+
+            <div
+                class="w-full
+                       lg:w-[50%]
+                       max-w-[600px]"
+            >
+
+                <p
+                    class="text-violet-400
+                           text-[9px]
+                           tracking-[3px]
+                           font-semibold
+                           uppercase
+                           mb-[6px]"
+                >
+                    MY PROJECTS
+                </p>
+
+
+                <h1
+                    class="text-white
+                           text-[30px] sm:text-[40px]
+                           font-bold
+                           leading-tight"
+                >
+                    My
+                    <span class="text-[#8B5CF6]">
+                        Featured Projects
+                    </span>
+                </h1>
+
+
+                <p
+                    class="text-gray-400
+                           text-[14px] sm:text-[15px]
+                           leading-[1.7]
+                           mt-[12px]"
+                >
+                    A selection of my projects combining
+                    data analytics, business insights,
+                    dashboards and SQL-based analysis.
+                </p>
+
+            </div>
+
+
+            <!-- RIGHT SIDE IMAGE -->
+
+            <div
+                class="w-full
+                       lg:w-[45%]
+                       flex
+                       justify-center
+                       lg:justify-end"
+            >
+
+                <img
+                    src="assets/skills.png"
+                    alt="Projects graphic"
+                    class="w-full
+                           max-w-[420px]
+                           sm:max-w-[500px]
+                           h-auto
+                           object-contain"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         LINE BELOW PROJECT INTRO
+    ========================================== -->
+
+    <hr
+        class="border-0
+               border-t
+               border-white/10
+               mx-[6%] md:mx-[8%]"
+    >
+
+
+    <!-- =========================================
+         PROJECTS SECTION
+    ========================================== -->
+
+    <section
+        class="px-[6%] md:px-[8%]
+               py-[50px]"
+    >
+
+        <div
+            class="grid
+                   grid-cols-1
+                   md:grid-cols-2
+                   gap-[20px]"
+        >
+
+
+            <!-- =========================================
+                 PROJECT 1
+            ========================================== -->
+
+            <article
+                class="project-card
+                       group
+                       bg-[#080B0F]
+                       border
+                       border-white/10
+                       border-l-[3px]
+                       border-l-[#8B5CF6]
+                       rounded-[10px]
+                       overflow-hidden
+                       transition
+                       duration-300
+                       hover:-translate-y-[5px]
+                       hover:border-[#8B5CF6]"
+            >
+
+                <img
+                    src="projects/marketing-campaign/image/Marketing_Executive_Overview.png"
+                    alt="Marketing Campaign Business Performance Analytics"
+                    class="w-full
+                           h-[230px]
+                           object-cover"
+                >
+
+
+                <div class="p-[22px]">
+
+                    <p
+                        class="text-[#8B5CF6]
+                               text-[9px]
+                               font-semibold
+                               tracking-[2px]
+                               uppercase"
+                    >
+                        MARKETING ANALYTICS
+                    </p>
+
+
+                    <h2
+                        class="text-white
+                               text-[20px]
+                               font-bold
+                               mt-[6px]"
+                    >
+                        Marketing Campaign Business Performance Analytics
+                    </h2>
+
+
+                    <p
+                        class="text-gray-400
+                               text-[13px]
+                               leading-[1.7]
+                               mt-[10px]"
+                    >
+                        An end-to-end marketing analytics project
+                        analyzing campaign performance, revenue,
+                        conversions, ROAS, platforms, regions,
+                        audience segments and content types.
+                    </p>
+
+
+                    <!-- TECHNOLOGIES -->
+
+                    <div
+                        class="flex
+                               flex-wrap
+                               gap-[7px]
+                               mt-[15px]"
+                    >
+
+                        <span class="px-[10px] py-[5px] rounded-full bg-white/5 text-gray-300 text-[10px]">
+                            Python
+                        </span>
+
+                        <span class="px-[10px] py-[5px] rounded-full bg-white/5 text-gray-300 text-[10px]">
+                            Excel
+                        </span>
+
+                        <span class="px-[10px] py-[5px] rounded-full bg-white/5 text-gray-300 text-[10px]">
+                            SQL Server
+                        </span>
+
+                        <span class="px-[10px] py-[5px] rounded-full bg-white/5 text-gray-300 text-[10px]">
+                            Power BI
+                        </span>
+
+                    </div>
+
+
+                    <!-- FOOTER -->
+
+                    <div
+                        class="flex
+                               items-center
+                               justify-between
+                               border-t
+                               border-white/10
+                               mt-[18px]
+                               pt-[15px]"
+                    >
+
+                        <span
+                            class="text-[#8B5CF6]
+                                   text-[12px]
+                                   font-semibold"
+                        >
+                            Business Analytics
+                        </span>
+
+
+                        <a
+                            href="https://github.com/mahakchauhan005-bit/Marketing-Campaign-Business-Performance-Analytics"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-gray-400
+                                   hover:text-white
+                                   text-[12px]
+                                   transition"
+                        >
+                           <i class="fa-brands fa-github mr-1"></i>
+GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================================
+                 PROJECT 2
+            ========================================== -->
+
+            <article
+                class="project-card
+                       group
+                       bg-[#080B0F]
+                       border
+                       border-white/10
+                       border-l-[3px]
+                       border-l-[#8B5CF6]
+                       rounded-[10px]
+                       overflow-hidden
+                       transition
+                       duration-300
+                       hover:-translate-y-[5px]
+                       hover:border-[#8B5CF6]"
+            >
+
+                <img
+                    src="projects/ecommerce-sales/image/executive_summary.png"
+                    alt="Ecommerce Sales Profit Analytics"
+                    class="w-full
+                           h-[230px]
+                           object-cover"
+                >
+
+
+                <div class="p-[22px]">
+
+                    <p
+                        class="text-[#8B5CF6]
+                               text-[9px]
+                               font-semibold
+                               tracking-[2px]
+                               uppercase"
+                    >
+                        E-COMMERCE ANALYTICS
+                    </p>
+
+
+                    <h2
+                        class="text-white
+                               text-[20px]
+                               font-bold
+                               mt-[6px]"
+                    >
+                        Ecommerce Sales Profit Analytics
+                    </h2>
+
+
+                    <p
+                        class="text-gray-400
+                               text-[13px]
+                               leading-[1.7]
+                               mt-[10px]"
+                    >
+                        An interactive sales and profit analytics
+                        project focused on revenue, profit,
+                        product performance, customer behavior
+                        and business trends.
+                    </p>
+
+
+                    <div
+                        class="flex
+                               flex-wrap
+                               gap-[7px]
+                               mt-[15px]"
+                    >
+
+                        <span class="px-[10px] py-[5px] rounded-full bg-white/5 text-gray-300 text-[10px]">
+                            Excel
+                        </span>
+
+                        <span class="px-[10px] py-[5px] rounded-full bg-white/5 text-gray-300 text-[10px]">
+                            SQL
+                        </span>
+
+                        <span class="px-[10px] py-[5px] rounded-full bg-white/5 text-gray-300 text-[10px]">
+                            Power BI
+                        </span>
+
+                    </div>
+
+
+                    <div
+                        class="flex
+                               items-center
+                               justify-between
+                               border-t
+                               border-white/10
+                               mt-[18px]
+                               pt-[15px]"
+                    >
+
+                        <span
+                            class="text-[#8B5CF6]
+                                   text-[12px]
+                                   font-semibold"
+                        >
+                            Sales Analytics
+                        </span>
+
+
+                        <a
+                            href="https://github.com/mahakchauhan005-bit/Ecommerce-Sales-Profit-Analytics"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-gray-400
+                                   hover:text-white
+                                   text-[12px]
+                                   transition"
+                        >
+                            <i class="fa-brands fa-github mr-1"></i>
+GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================================
+                 PROJECT 3
+            ========================================== -->
+
+            <article
+                class="project-card
+                       group
+                       bg-[#080B0F]
+                       border
+                       border-white/10
+                       border-l-[3px]
+                       border-l-[#8B5CF6]
+                       rounded-[10px]
+                       overflow-hidden
+                       transition
+                       duration-300
+                       hover:-translate-y-[5px]
+                       hover:border-[#8B5CF6]"
+            >
+
+                <img
+                    src="projects/hr-analytics/image/workforce_dashboard.png"
+                    alt="HR Enterprise Analytics Dashboard"
+                    class="w-full
+                           h-[230px]
+                           object-cover"
+                >
+
+
+                <div class="p-[22px]">
+
+                    <p
+                        class="text-[#8B5CF6]
+                               text-[9px]
+                               font-semibold
+                               tracking-[2px]
+                               uppercase"
+                    >
+                        HR ANALYTICS
+                    </p>
+
+
+                    <h2
+                        class="text-white
+                               text-[20px]
+                               font-bold
+                               mt-[6px]"
+                    >
+                        HR Enterprise Analytics Dashboard
+                    </h2>
+
+
+                    <p
+                        class="text-gray-400
+                               text-[13px]
+                               leading-[1.7]
+                               mt-[10px]"
+                    >
+                        An interactive HR analytics dashboard
+                        focused on workforce performance,
+                        employee engagement, satisfaction,
+                        training and business-unit insights.
+                    </p>
+
+
+                    <div
+                        class="flex
+                               flex-wrap
+                               gap-[7px]
+                               mt-[15px]"
+                    >
+
+                        <span class="px-[10px] py-[5px] rounded-full bg-white/5 text-gray-300 text-[10px]">
+                            Power BI
+                        </span>
+
+                        <span class="px-[10px] py-[5px] rounded-full bg-white/5 text-gray-300 text-[10px]">
+                            DAX
+                        </span>
+
+                        <span class="px-[10px] py-[5px] rounded-full bg-white/5 text-gray-300 text-[10px]">
+                            Power Query
+                        </span>
+
+                        <span class="px-[10px] py-[5px] rounded-full bg-white/5 text-gray-300 text-[10px]">
+                            Excel
+                        </span>
+
+                    </div>
+
+
+                    <div
+                        class="flex
+                               items-center
+                               justify-between
+                               border-t
+                               border-white/10
+                               mt-[18px]
+                               pt-[15px]"
+                    >
+
+                        <span
+                            class="text-[#8B5CF6]
+                                   text-[12px]
+                                   font-semibold"
+                        >
+                            HR Reporting
+                        </span>
+
+
+                        <a
+                            href="https://github.com/mahakchauhan005-bit/HR_Enterprise_Analytics"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-gray-400
+                                   hover:text-white
+                                   text-[12px]
+                                   transition"
+                        >
+                           <i class="fa-brands fa-github mr-1"></i>
+GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================================
+                 PROJECT 4
+            ========================================== -->
+
+            <article
+                class="project-card
+                       group
+                       bg-[#080B0F]
+                       border
+                       border-white/10
+                       border-l-[3px]
+                       border-l-[#8B5CF6]
+                       rounded-[10px]
+                       overflow-hidden
+                       transition
+                       duration-300
+                       hover:-translate-y-[5px]
+                       hover:border-[#8B5CF6]"
+            >
+
+                <!-- Replace this image path if your Instagram project
+                     uses a different screenshot filename. -->
+
+                <img
+                    src="projects/instagram-sql/image/instagram.png"
+                    alt="Instagram SQL Analytics Project"
+                    class="w-full
+                           h-[230px]
+                           object-cover"
+                >
+
+
+                <div class="p-[22px]">
+
+                    <p
+                        class="text-[#8B5CF6]
+                               text-[9px]
+                               font-semibold
+                               tracking-[2px]
+                               uppercase"
+                    >
+                        SQL ANALYTICS
+                    </p>
+
+
+                    <h2
+                        class="text-white
+                               text-[20px]
+                               font-bold
+                               mt-[6px]"
+                    >
+                        Instagram SQL Analytics Project
+                    </h2>
+
+
+                    <p
+                        class="text-gray-400
+                               text-[13px]
+                               leading-[1.7]
+                               mt-[10px]"
+                    >
+                        A MySQL analytics project using a
+                        normalized Instagram-style database
+                        to analyze engagement, post performance,
+                        users and hashtag trends.
+                    </p>
+
+
+                    <div
+                        class="flex
+                               flex-wrap
+                               gap-[7px]
+                               mt-[15px]"
+                    >
+
+                        <span class="px-[10px] py-[5px] rounded-full bg-white/5 text-gray-300 text-[10px]">
+                            MySQL
+                        </span>
+
+                        <span class="px-[10px] py-[5px] rounded-full bg-white/5 text-gray-300 text-[10px]">
+                            SQL
+                        </span>
+
+                        <span class="px-[10px] py-[5px] rounded-full bg-white/5 text-gray-300 text-[10px]">
+                            Views
+                        </span>
+
+                        <span class="px-[10px] py-[5px] rounded-full bg-white/5 text-gray-300 text-[10px]">
+                            Stored Procedures
+                        </span>
+
+                    </div>
+
+
+                    <div
+                        class="flex
+                               items-center
+                               justify-between
+                               border-t
+                               border-white/10
+                               mt-[18px]
+                               pt-[15px]"
+                    >
+
+                        <span
+                            class="text-[#8B5CF6]
+                                   text-[12px]
+                                   font-semibold"
+                        >
+                            SQL Analytics
+                        </span>
+
+
+                        <a
+                            href="https://github.com/mahakchauhan005-bit/Instagram-SQL-Analytics-Project"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-gray-400
+                                   hover:text-white
+                                   text-[12px]
+                                   transition"
+                        >
+                            
+                           <i class="fa-brands fa-github mr-1"></i>
+GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+      FOOTER
+========================================== -->
+  <footer
+    class="footer grid grid-cols-1 md:grid-cols-3 items-center gap-5 md:gap-[30px] px-5 sm:px-[6%] py-6 md:py-[25px] border-t border-white/10 bg-[#05080B] text-center md:text-left">
+
+    <div class="footer-logo text-white text-[12px] font-bold tracking-[3px] uppercase">
+      MAHAK CHAUHAN
+    </div>
+
+    <nav class="footer-navigation flex flex-wrap justify-center gap-4 sm:gap-[22px]">
+      <a href="index.html" class="text-[#777] text-[9px] no-underline hover:text-[#8B5CF6] transition-colors">Home</a>
+      <a href="projects.html"
+        class="text-[#777] text-[9px] no-underline hover:text-[#8B5CF6] transition-colors">Projects</a>
+      <a href="about.html" class="text-[#777] text-[9px] no-underline hover:text-[#8B5CF6] transition-colors">About</a>
+      <a href="skills.html"
+        class="text-[#777] text-[9px] no-underline hover:text-[#8B5CF6] transition-colors">Skills</a>
+      <a href="resume.html"
+        class="text-[#777] text-[9px] no-underline hover:text-[#8B5CF6] transition-colors">Resume</a>
+      <a href="contact.html"
+        class="text-[#777] text-[9px] no-underline hover:text-[#8B5CF6] transition-colors">Contact</a>
+    </nav>
+
+    <p class="footer-copyright text-[#666] text-[9px] text-center md:text-right">
+      © 2026 Mahak Chauhan. All rights reserved.
+    </p>
+
+  </footer>
+
+
+
+
+    <!-- =========================================
+         EXISTING JAVASCRIPT
+    ========================================== -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
