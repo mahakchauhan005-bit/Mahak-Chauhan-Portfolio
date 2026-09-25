@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About Me</title>
+
+
+  <!-- =========================================
+         TAILWIND CSS
+         Provides styling through utility classes
+    ========================================== -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <!-- =========================================
+         DEVICON
+         Technology icons
+    ========================================== -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <!--==================================================
+FONT AWESOME
+======================================================-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+
+<body class="bg-[#05080B] text-white">
+
+
+  <!-- =========================================
+         NAVBAR
+         Desktop + Responsive
+    ========================================== -->
+
+  <header class="fixed top-0 left-0 w-full
+               px-[4%] md:px-[6%] py-3
+               bg-[#05080b]/95
+               border-b border-white/5
+               z-[1000]">
+
+    <div class="w-full flex items-center justify-between">
+
+        <!-- Logo -->
+        <a href="index.html"
+           class="text-white no-underline
+                  text-[13px] sm:text-[15px]
+                  font-bold tracking-[2px] sm:tracking-[4px]
+                  whitespace-nowrap">
+            MAHAK CHAUHAN
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-[22px] lg:gap-[30px]">
+            <a href="index.html"
+               class="text-[#A7A7A7] no-underline text-[14px]
+                      hover:text-[#8B5CF6] transition">
+                Home
+            </a>
+
+            <a href="projects.html"
+               class="text-[#A7A7A7] no-underline text-[14px]
+                      hover:text-[#8B5CF6] transition">
+                Projects
+            </a>
+
+            <a href="about.html"
+               class="text-[#A7A7A7] no-underline text-[14px]
+                      hover:text-[#8B5CF6] transition">
+                About
+            </a>
+
+            <a href="skills.html"
+               class="text-[#A7A7A7] no-underline text-[14px]
+                      hover:text-[#8B5CF6] transition">
+                Skills
+            </a>
+
+            <!-- Active Resume -->
+            <a href="resume.html"
+               class="relative text-[#8B5CF6] no-underline text-[14px]
+                      after:content-['']
+                      after:absolute after:left-0 after:bottom-[-4px]
+                      after:w-full after:h-[1px]
+                      after:bg-[#8B5CF6]">
+                Resume
+            </a>
+
+            <a href="contact.html"
+               class="text-[#A7A7A7] no-underline text-[14px]
+                      hover:text-[#8B5CF6] transition">
+                Contact
+            </a>
+        </nav>
+
+        <!-- Let's Talk -->
+        <a href="contact.html"
+           class="text-[#8B5CF6]
+                  border border-[#8B5CF6]
+                  px-[14px] py-[5px]
+                  rounded-[20px]
+                  no-underline
+                  text-[10px] sm:text-[11px]
+                  hover:bg-[#8B5CF6]
+                  hover:text-white
+                  transition
+                  whitespace-nowrap">
+            Let's Talk
+        </a>
+
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="md:hidden w-full
+                flex items-center justify-center
+                gap-[14px] sm:gap-[22px]
+                overflow-x-auto
+                no-scrollbar
+                py-2 mt-1">
+
+        <a href="index.html"
+           class="text-[#A7A7A7] no-underline
+                  text-[12px] sm:text-[13px]
+                  whitespace-nowrap
+                  hover:text-[#8B5CF6] transition">
+            Home
+        </a>
+
+        <a href="projects.html"
+           class="text-[#A7A7A7] no-underline
+                  text-[12px] sm:text-[13px]
+                  whitespace-nowrap
+                  hover:text-[#8B5CF6] transition">
+            Projects
+        </a>
+
+        <a href="about.html"
+           class="text-[#A7A7A7] no-underline
+                  text-[12px] sm:text-[13px]
+                  whitespace-nowrap
+                  hover:text-[#8B5CF6] transition">
+            About
+        </a>
+
+        <a href="skills.html"
+           class="text-[#A7A7A7] no-underline
+                  text-[12px] sm:text-[13px]
+                  whitespace-nowrap
+                  hover:text-[#8B5CF6] transition">
+            Skills
+        </a>
+
+        <!-- Active Resume -->
+        <a href="resume.html"
+           class="relative text-[#8B5CF6] no-underline
+                  text-[12px] sm:text-[13px]
+                  whitespace-nowrap
+                  after:content-['']
+                  after:absolute after:left-0 after:bottom-[-4px]
+                  after:w-full after:h-[1px]
+                  after:bg-[#8B5CF6]">
+            Resume
+        </a>
+
+        <a href="contact.html"
+           class="text-[#A7A7A7] no-underline
+                  text-[12px] sm:text-[13px]
+                  whitespace-nowrap
+                  hover:text-[#8B5CF6] transition">
+            Contact
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+  <!-- =========================================
+         ABOUT PAGE CONTENT
+    ========================================== -->
+
+  <main>
+
+
+    <!-- =========================================
+             ABOUT SECTION
+        ========================================== -->
+
+    <section class="px-[8%]
+                   pt-[130px]
+                   pb-[60px]">
+
+
+      <!-- =========================================
+                 TEXT + IMAGE LAYOUT
+
+                 Mobile:
+                 text
+                 image + keywords
+
+                 Desktop:
+                 text                  image + keywords
+            ========================================== -->
+
+      <div class="flex
+                       flex-col
+                       lg:flex-row
+                       items-start
+                       lg:items-center
+                       justify-between
+                       gap-[50px]">
+
+
+        <!-- =========================================
+                     LEFT SIDE: ABOUT TEXT
+                ========================================== -->
+
+        <div class="w-full
+                           max-w-[500px]">
+
+
+          <!-- Section label -->
+
+          <p class="text-violet-500
+                               text-[9px]
+                               font-semibold
+                               tracking-[3px]
+                               uppercase
+                               mb-[6px]">
+
+            ABOUT ME
+
+          </p>
+
+
+          <!-- Heading -->
+
+          <h1 class="text-white
+                               text-[28px]
+                               font-bold
+                               leading-tight">
+
+            A little
+            <span class="text-violet-500">
+              about me
+            </span>
+
+          </h1>
+
+
+          <!-- Description -->
+
+          <p class="text-gray-400
+                               text-[15px]
+                               leading-[1.6]
+                               mt-[10px]">
+
+            I bridge data and technology as a Data Analyst,
+            Business Analyst, and Frontend Developer. I specialize
+            in turning raw data into actionable insights and
+            building clean, interactive web experiences.
+            My passion lies in solving real-world problems,
+            discovering data patterns, and building intuitive
+            dashboards that make complex information simple.
+
+          </p>
+
+          <!-- =========================================
+     DOWNLOAD RESUME BUTTON
+     Compact responsive button matching
+     the reference design
+========================================== -->
+
+          <a href="resume/Mahak_Chauhan_Resume.pdf" target="_blank" class="mt-[20px]
+           inline-flex
+           w-fit
+           max-w-full
+           items-center
+           gap-[9px]
+           text-[#8B5CF6]
+           border
+           border-[#8B5CF6]
+           px-[18px]
+           py-[9px]
+           rounded-[20px]
+           no-underline
+           text-[15px]
+           font-medium
+           transition
+           duration-300
+           hover:bg-[#8B5CF6]
+           hover:text-white">
+            <span class="text-[18px] font-semibold leading-none">↓</span>
+            DOWNLOAD RESUME
+          </a>
+
+
+        </div>
+
+
+
+        <!-- =========================================
+                     RIGHT SIDE: IMAGE + KEYWORDS
+                ========================================== -->
+
+        <!-- RIGHT SIDE IMAGE -->
+
+            <div
+                class="w-full
+                       lg:w-[55%]
+                       flex
+                       justify-center
+                       lg:justify-end"
+            >
+
+                <img
+                    src="assets/skills.png"
+                    alt="Skills graphic"
+                    class="w-full
+                           max-w-[420px]
+                           sm:max-w-[500px]
+                           xl:max-w-[600px]
+                           h-auto
+                           object-contain"
+                >
+
+            </div>
+
+
+          <!-- =========================================
+                         KEYWORDS
+                    ========================================== -->
+
+          <div class="flex
+                               flex-col
+                               items-start
+                               sm:pr-[16px]">
+
+
+            <span class="text-white
+                                   text-[24px]
+                                   font-bold
+                                   leading-[1.2]">
+
+              DATA
+
+            </span>
+
+
+            <span class="text-white
+                                   text-[24px]
+                                   font-bold
+                                   leading-[1.2]">
+
+              INSIGHTS
+
+            </span>
+
+
+            <span class="text-white
+                                   text-[24px]
+                                   font-bold
+                                   leading-[1.2]">
+
+              IDEAS
+
+            </span>
+
+
+            <span class="text-white
+                                   text-[24px]
+                                   font-bold
+                                   leading-[1.2]">
+
+              IMPACT
+
+            </span>
+
+
+            <!-- Violet line -->
+
+            <div class="w-[85px]
+                                   h-[2px]
+                                   bg-violet-500
+                                   mt-[8px]"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =========================================
+         HORIZONTAL DIVIDER
+    ========================================== -->
+
+  <hr class="border-0
+               border-t
+               border-white/10">
+
+
+  <!--=================================================
+          SKIILS SECTION 
+    ====================================================== -->
+  <section class="px-[8%]
+                   pt-[90px]
+                   pb-[60px]">
+    <div class="flex
+                       flex-col
+                       lg:flex-row
+                       items-start
+                       lg:items-center
+                       justify-between
+                       gap-[50px]
+                       ">
+
+
+      <!-- =========================================
+                     LEFT SIDE: Skill TEXT
+                ========================================== -->
+
+      <div class="w-full
+                           max-w-[500px]">
+
+
+        <p class="text-violet-500
+                               text-[9px]
+                               font-semibold
+                               tracking-[3px]
+                               uppercase
+                               mb-[6px]">
+
+          WHAT I DO
+
+        </p>
+
+
+        <!-- Heading -->
+
+        <h1 class="text-white
+                               text-[28px]
+                               font-bold
+                               leading-tight">
+
+          Turning ideas into impact
+
+        </h1>
+        <!-- Sub Heading-->
+        <h2 clas="text-white
+                               text-[24px]
+                               font-bold
+                               leading-tight">
+          I work at the intersection of data,
+          <span class="text-violet-500">
+            business and tech logic
+          </span> to create
+          <span class="text-violet-500">impactful solutions and modern web applications.</span>
+        </h2>
+      </div>
+  </section>
+
+
+
+  <!-- =========================================
+     WHAT I DO CARDS
+========================================== -->
+
+  <div class="grid
+            grid-cols-1
+            md:grid-cols-2
+            lg:grid-cols-3
+            gap-[15px]
+            mt-[25px]">
+
+    <!-- DATA ANALYTICS -->
+    <div class="flex flex-col items-start gap-[12px]
+                border border-white/10
+                border-l-[3px] border-l-[#8B5CF6]
+                rounded-[8px]
+                px-[20px] py-[20px]">
+
+      <div class="text-white text-[21px]">
+        <i class="fa-solid fa-chart-simple"></i>
+      </div>
+
+      <h3 class="text-white text-[17px] font-bold leading-tight">
+        Data Analytics
+      </h3>
+
+      <p class="text-gray-400 text-[13px] leading-[1.6]">
+        Turn raw data into meaningful insights
+        using Python, SQL, Excel, Power BI and
+        data visualization techniques.
+      </p>
+
+    </div>
+
+
+    <!-- BUSINESS ANALYSIS -->
+    <div class="flex flex-col items-start gap-[12px]
+                border border-white/10
+                border-l-[3px] border-l-[#8B5CF6]
+                rounded-[8px]
+                px-[20px] py-[20px]">
+
+      <div class="text-white text-[21px]">
+        <i class="fa-solid fa-users"></i>
+      </div>
+
+      <h3 class="text-white text-[17px] font-bold leading-tight">
+        Business Analysis
+      </h3>
+
+      <p class="text-gray-400 text-[13px] leading-[1.6]">
+        Understand business problems,
+        analyze requirements and provide
+        data-driven recommendations.
+      </p>
+
+    </div>
+
+
+    <!-- FRONTEND DEVELOPMENT -->
+    <div class="flex flex-col items-start gap-[12px]
+                border border-white/10
+                border-l-[3px] border-l-[#8B5CF6]
+                rounded-[8px]
+                px-[20px] py-[20px]">
+
+      <div class="text-white text-[21px]">
+        <i class="fa-solid fa-code"></i>
+      </div>
+
+      <h3 class="text-white text-[17px] font-bold leading-tight">
+        Frontend Development
+      </h3>
+
+      <p class="text-gray-400 text-[13px] leading-[1.6]">
+        Build clean, responsive and interactive
+        web experiences using HTML, CSS,
+        JavaScript and Tailwind CSS.
+      </p>
+
+    </div>
+  </div>
+
+
+
+  <!--===================================
+     SECTION ENDS HERE 
+     ======================================-->
+  <hr class="border-0
+           border-t
+           border-white/10
+           my-[40px]">
+
+
+
+
+  <!-- =========================================
+      MY APPROACH SECTION
+========================================== -->
+
+
+
+  <section class="px-[8%] pt-[50px] pb-[60px]">
+
+    <!-- Header Text -->
+    <div class="w-full max-w-[500px]">
+      <p class="text-violet-500 text-[9px] font-semibold tracking-[3px] uppercase mb-[6px]">
+        MY APPROACH
+      </p>
+
+      <h1 class="text-white text-[28px] font-bold leading-tight mb-2">
+        How I work
+      </h1>
+
+      <h2 class="text-gray-400 text-[18px] font-medium leading-relaxed">
+        A structured method to turn data into real solutions.
+      </h2>
+    </div>
+
+    <!-- METHODS CONTAINER -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 mt-[35px]">
+
+      <!-- 01 Analyze -->
+      <div class="flex flex-col items-start gap-4">
+        <div class="w-full flex items-center justify-between pr-0 lg:pr-4">
+          <div class="flex items-center gap-4">
+            <span
+              class="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full border-2 border-violet-500 bg-slate-900/90 text-white shadow-[0_0_12px_rgba(139,92,246,0.5)]">
+              <i class="fa-solid fa-magnifying-glass text-base"></i>
+            </span>
+            <div>
+              <span class="text-violet-500 text-[13px] font-bold">01</span>
+              <h3 class="text-white text-[18px] font-bold leading-tight">Analyze</h3>
+            </div>
+          </div>
+          <!-- Right Arrow (Desktop) / Down Arrow (Mobile) -->
+          <div class="text-slate-600 text-sm">
+            <i class="fa-solid fa-arrow-right hidden lg:block"></i>
+            <i class="fa-solid fa-arrow-down block lg:hidden"></i>
+          </div>
+        </div>
+        <p class="text-gray-400 text-[13px] leading-[1.6]">
+          Explore the problem, understand the data and define clear goals.
+      </div>
+
+      <!-- 02 Understand -->
+      <div class="flex flex-col items-start gap-4">
+        <div class="w-full flex items-center justify-between pr-0 lg:pr-4">
+          <div class="flex items-center gap-4">
+            <span
+              class="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full border-2 border-violet-500 bg-slate-900/90 text-white shadow-[0_0_12px_rgba(139,92,246,0.5)]">
+              <i class="fa-solid fa-lightbulb text-base"></i>
+            </span>
+            <div>
+              <span class="text-violet-500 text-[13px] font-bold">02</span>
+              <h3 class="text-white text-[18px] font-bold leading-tight">Understand</h3>
+            </div>
+          </div>
+          <!-- Right Arrow (Desktop) / Down Arrow (Mobile) -->
+          <div class="text-slate-600 text-sm">
+            <i class="fa-solid fa-arrow-right hidden lg:block"></i>
+            <i class="fa-solid fa-arrow-down block lg:hidden"></i>
+          </div>
+        </div>
+        <p class="text-gray-400 text-[13px] leading-[1.6]">
+          Find patterns, extract insights and plan the right solution.
+        </p>
+      </div>
+
+      <!-- 03 Build -->
+      <div class="flex flex-col items-start gap-4">
+        <div class="flex items-center gap-4">
+          <span
+            class="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full border-2 border-violet-500 bg-slate-900/90 text-white shadow-[0_0_12px_rgba(139,92,246,0.5)]">
+            <i class="fa-solid fa-gear text-base"></i>
+          </span>
+          <div>
+            <span class="text-violet-500 text-[13px] font-bold">03</span>
+            <h3 class="text-white text-[18px] font-bold leading-tight">Build</h3>
+          </div>
+        </div>
+        <p class="text-gray-400 text-[13px] leading-[1.6]">
+          Develop, test and deliver impactful solutions.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!--==================================================
+            Sectiion ends here
+=====================================================-->
+
+  <hr class="border-0
+           border-t
+           border-white/10
+           my-[20px]">
+
+  <!--==================================================
+            ABOUT SKILLS / TOOLS & TECHNOLOGIES
+=====================================================-->
+  <section class="px-[8%] pt-[90px] pb-[60px] bg-[#05080B]">
+
+    <!-- Header Text -->
+    <div class="w-full max-w-[500px]">
+      <p class="text-[#8B5CF6] text-[9px] font-semibold tracking-[3px] uppercase mb-[6px]">
+        TOOLS & TECHNOLOGIES
+      </p>
+
+      <h1 class="text-white text-[28px] font-bold leading-tight mb-8">
+        Tools I work with
+      </h1>
+    </div>
+
+    <!-- TOOLS GRID -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+
+      <!-- Python -->
+      <div
+        class="flex flex-col items-center justify-center p-4 rounded-xl bg-white/[0.02] border border-white/10 hover:border-[#8B5CF6] transition-all duration-300 group cursor-pointer">
+        <i class="fa-brands fa-python text-3xl text-[#3776AB] mb-2 group-hover:scale-110 transition-transform"></i>
+        <span class="text-gray-300 text-xs font-semibold">Python</span>
+      </div>
+
+      <!-- SQL Server -->
+      <div
+        class="flex flex-col items-center justify-center p-4 rounded-xl bg-white/[0.02] border border-white/10 hover:border-[#8B5CF6] transition-all duration-300 group cursor-pointer">
+        <i class="fa-solid fa-database text-3xl text-[#CC292B] mb-2 group-hover:scale-110 transition-transform"></i>
+        <span class="text-gray-300 text-xs font-semibold">SQL Server</span>
+      </div>
+
+      <!-- MySQL -->
+      <div
+        class="flex flex-col items-center justify-center p-4 rounded-xl bg-white/[0.02] border border-white/10 hover:border-[#8B5CF6] transition-all duration-300 group cursor-pointer">
+        <i class="fa-solid fa-server text-3xl text-[#00758F] mb-2 group-hover:scale-110 transition-transform"></i>
+        <span class="text-gray-300 text-xs font-semibold">MySQL</span>
+      </div>
+
+      <!-- Power BI -->
+      <div
+        class="flex flex-col items-center justify-center p-4 rounded-xl bg-white/[0.02] border border-white/10 hover:border-[#8B5CF6] transition-all duration-300 group cursor-pointer">
+        <i class="fa-solid fa-chart-column text-3xl text-[#F2C811] mb-2 group-hover:scale-110 transition-transform"></i>
+        <span class="text-gray-300 text-xs font-semibold">Power BI</span>
+      </div>
+
+      <!-- Excel -->
+      <div
+        class="flex flex-col items-center justify-center p-4 rounded-xl bg-white/[0.02] border border-white/10 hover:border-[#8B5CF6] transition-all duration-300 group cursor-pointer">
+        <i class="fa-solid fa-file-excel text-3xl text-[#107C41] mb-2 group-hover:scale-110 transition-transform"></i>
+        <span class="text-gray-300 text-xs font-semibold">Excel</span>
+      </div>
+
+      <!-- DAX -->
+      <div
+        class="flex flex-col items-center justify-center p-4 rounded-xl bg-white/[0.02] border border-white/10 hover:border-[#8B5CF6] transition-all duration-300 group cursor-pointer">
+        <i class="fa-solid fa-calculator text-3xl text-[#E36209] mb-2 group-hover:scale-110 transition-transform"></i>
+        <span class="text-gray-300 text-xs font-semibold">DAX</span>
+      </div>
+
+      <!-- Power Query -->
+      <div
+        class="flex flex-col items-center justify-center p-4 rounded-xl bg-white/[0.02] border border-white/10 hover:border-[#8B5CF6] transition-all duration-300 group cursor-pointer">
+        <i class="fa-solid fa-filter text-3xl text-[#00B4D8] mb-2 group-hover:scale-110 transition-transform"></i>
+        <span class="text-gray-300 text-xs font-semibold">Power Query</span>
+      </div>
+
+      <!-- HTML -->
+      <div
+        class="flex flex-col items-center justify-center p-4 rounded-xl bg-white/[0.02] border border-white/10 hover:border-[#8B5CF6] transition-all duration-300 group cursor-pointer">
+        <i class="fa-brands fa-html5 text-3xl text-[#E34F26] mb-2 group-hover:scale-110 transition-transform"></i>
+        <span class="text-gray-300 text-xs font-semibold">HTML</span>
+      </div>
+
+      <!-- CSS -->
+      <div
+        class="flex flex-col items-center justify-center p-4 rounded-xl bg-white/[0.02] border border-white/10 hover:border-[#8B5CF6] transition-all duration-300 group cursor-pointer">
+        <i class="fa-brands fa-css3-alt text-3xl text-[#1572B6] mb-2 group-hover:scale-110 transition-transform"></i>
+        <span class="text-gray-300 text-xs font-semibold">CSS</span>
+      </div>
+
+      <!-- JavaScript -->
+      <div
+        class="flex flex-col items-center justify-center p-4 rounded-xl bg-white/[0.02] border border-white/10 hover:border-[#8B5CF6] transition-all duration-300 group cursor-pointer">
+        <i class="fa-brands fa-js text-3xl text-[#F7DF1E] mb-2 group-hover:scale-110 transition-transform"></i>
+        <span class="text-gray-300 text-xs font-semibold">JavaScript</span>
+      </div>
+
+      <!-- Tailwind CSS -->
+      <div
+        class="flex flex-col items-center justify-center p-4 rounded-xl bg-white/[0.02] border border-white/10 hover:border-[#8B5CF6] transition-all duration-300 group cursor-pointer">
+        <i class="fa-solid fa-wind text-3xl text-[#06B6D4] mb-2 group-hover:scale-110 transition-transform"></i>
+        <span class="text-gray-300 text-xs font-semibold">Tailwind CSS</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!--==================================================
+            Sectiion ends here
+=====================================================-->
+
+  <hr class="border-0
+           border-t
+           border-white/10
+           my-[20px]">
+
+
+  <!-- =========================================
+      CONTACT SECTION
+========================================== -->
+  <section
+    class="grid grid-cols-1 lg:grid-cols-[1fr_1.3fr_0.8fr] gap-8 lg:gap-[45px] border-t border-white/10 px-5 sm:px-[6%] py-12 md:py-[70px] bg-[#05080B]">
+
+    <!-- Image Container -->
+    <div class="contact-image flex items-center justify-center overflow-hidden">
+      <img src="assets/laptop-contact.png" alt="Laptop showing analytics dashboard"
+        class="w-full max-w-[430px] h-48 sm:h-60 md:h-[250px] object-cover block opacity-80 rounded-[5px]" />
+    </div>
+
+    <!-- Content -->
+    <div class="contact-content flex flex-col justify-center items-center text-center lg:items-start lg:text-left">
+      <p class="contact-label text-[#8B5CF6] text-[10px] font-bold tracking-[3px] mb-3 uppercase">
+        LET'S CONNECT
+      </p>
+
+      <h2
+        class="text-white text-2xl sm:text-[28px] md:text-[30px] font-bold leading-snug sm:leading-[1.2] mb-4 md:mb-[18px]">
+        Have a project in mind?
+        <br class="hidden sm:inline">
+        Or just want to say hi?
+      </h2>
+
+      <p class="contact-description text-[#A7A7A7] text-xs leading-[1.6] max-w-[400px] mb-6 md:mb-[25px]">
+        I'm always open to discussing new opportunities,
+        collaborations, projects or ideas.
+      </p>
+
+      <a href="contact.html"
+        class="contact-button inline-flex items-center gap-3 md:gap-[15px] w-fit bg-[#8B5CF6] hover:bg-[#7c4dff] text-white px-5 py-3 rounded-[5px] text-[11px] font-semibold no-underline transition-colors">
+        Get in Touch
+        <span>→</span>
+      </a>
+    </div>
+
+    <!-- Contact Info Sidebar -->
+    <div
+      class="contact-info flex flex-col sm:flex-row lg:flex-col justify-center items-start sm:items-center lg:items-start sm:justify-around lg:justify-center gap-6 md:gap-[25px] border-t lg:border-t-0 lg:border-l border-white/10 pt-6 lg:pt-0 lg:pl-[30px]">
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/mahak-chauhan-092b33422?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"
+        class="contact-item flex items-center gap-4 text-white no-underline hover:text-[#8B5CF6] transition-colors group w-full">
+        <div class="w-6 flex justify-center items-center shrink-0">
+          <i class="devicon-linkedin-plain text-[#8B5CF6] text-[20px]"></i>
+        </div>
+        <div class="flex flex-col text-left">
+          <strong
+            class="text-white group-hover:text-[#8B5CF6] text-[11px] transition-colors leading-tight">LinkedIn</strong>
+          <small class="text-[#777] text-[9px] mt-0.5">Connect with me</small>
+        </div>
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/mahakchauhan005-bit" target="_blank"
+        class="contact-item flex items-center gap-4 text-white no-underline hover:text-[#8B5CF6] transition-colors group w-full">
+        <div class="w-6 flex justify-center items-center shrink-0">
+          <i class="devicon-github-original text-[#8B5CF6] text-[20px]"></i>
+        </div>
+        <div class="flex flex-col text-left">
+          <strong
+            class="text-white group-hover:text-[#8B5CF6] text-[11px] transition-colors leading-tight">GitHub</strong>
+          <small class="text-[#777] text-[9px] mt-0.5">Check out my code</small>
+        </div>
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:mahakchauhan005@gmail.com"
+        class="contact-item flex items-center gap-4 text-white no-underline hover:text-[#8B5CF6] transition-colors group w-full">
+        <div class="w-6 flex justify-center items-center shrink-0">
+          <i class="fa-solid fa-envelope text-[#8B5CF6] text-[18px]"></i>
+        </div>
+        <div class="flex flex-col text-left">
+          <strong
+            class="text-white group-hover:text-[#8B5CF6] text-[11px] transition-colors leading-tight">Email</strong>
+          <small class="text-[#777] text-[9px] mt-0.5">mahakchauhan005@gmail.com</small>
+        </div>
+      </a>
+
+    </div>
+
+  </section>
+  <!-- =========================================
+      FOOTER
+========================================== -->
+  <footer
+    class="footer grid grid-cols-1 md:grid-cols-3 items-center gap-5 md:gap-[30px] px-5 sm:px-[6%] py-6 md:py-[25px] border-t border-white/10 bg-[#05080B] text-center md:text-left">
+
+    <div class="footer-logo text-white text-[12px] font-bold tracking-[3px] uppercase">
+      MAHAK CHAUHAN
+    </div>
+
+    <nav class="footer-navigation flex flex-wrap justify-center gap-4 sm:gap-[22px]">
+      <a href="index.html" class="text-[#777] text-[9px] no-underline hover:text-[#8B5CF6] transition-colors">Home</a>
+      <a href="projects.html"
+        class="text-[#777] text-[9px] no-underline hover:text-[#8B5CF6] transition-colors">Projects</a>
+      <a href="about.html" class="text-[#777] text-[9px] no-underline hover:text-[#8B5CF6] transition-colors">About</a>
+      <a href="skills.html"
+        class="text-[#777] text-[9px] no-underline hover:text-[#8B5CF6] transition-colors">Skills</a>
+      <a href="resume.html"
+        class="text-[#777] text-[9px] no-underline hover:text-[#8B5CF6] transition-colors">Resume</a>
+      <a href="contact.html"
+        class="text-[#777] text-[9px] no-underline hover:text-[#8B5CF6] transition-colors">Contact</a>
+    </nav>
+
+    <p class="footer-copyright text-[#666] text-[9px] text-center md:text-right">
+      © 2026 Mahak Chauhan. All rights reserved.
+    </p>
+
+  </footer>
+
+
+
+  <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
